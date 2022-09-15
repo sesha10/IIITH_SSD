@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> 
+    <body>
+        <center><h2 class="center">Team Form</h2></center>
+        <form name="forminp" onsubmit="return validateForm()">
+            <div>
+                <input type="hidden" onkeypress="myFunction(key)"> 
+                <label>Manager:</label> <input type="text" class="inp" name="manager" required/>
+                <br>
+                <br>
+                <label>Group Email:</label> <input type="email" class="inp" name="email" required/>
+                <br>
+                <br>
+                <label>Server Username:</label> <input type="text" class="inp" name="uname" pattern="(?=.*\d)(?=.*[A-Z]).*" required/>
+                <br>
+                <br>
+                <label>Server Password:</label> <input type="password" class="inp" name="passw" required/>
+                <br>
+                <br>
+                <label>Confirm Password:</label> <input type="password" class="inp" name="cpassw" required/>
+                <br>
+                <br>
+                <label>Team Lead:</label> 
+                <select type="text" value="" name="lead">
+                    <option>Federer</option>
+                    <option>Nadal</option>
+                    <option>Djokovic</option>
+                    <option>Murray</option>
+                    <option>Isner</option>
+                </select>
+                <br>
+                <br>
+                <label>Team Members:</label>
+                <!-- Add component here -->
+                <div style="display:table-row">
+                    <div class="dropbox" id="div2" style="float: left;">
+                        <p id="drag1" draggable="true" ondragstart="dragpoint(event)">Payer 1</p>
+                        <p id="drag2" draggable="true" ondragstart="dragpoint(event)">Payer 2</p>
+                        <p id="drag3" draggable="true" ondragstart="dragpoint(event)">Payer 3</p>
+                    </div>
+                    <span></span>
+                    <div class="dropbox" id="div1" style="float: right;"
+                        ondrop="droppoint(event)"
+                        ondragover="allowDropOption(event)">
+                    </div>
+                </div>
+                <!-- <p id="drag1"
+                    draggable="true"
+                    ondragstart="dragpoint(event)">GeeksforGeeks: A computer science portal for geeks.
+                </p> -->
+                
+                <br>
+                <br>
+                <input type="submit" value="Submit" onclick="test()"></input>
+            </div>
+        </form>
+    </body>
+</html>
