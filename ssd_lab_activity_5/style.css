@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(bottom, white, grey);
+    background-repeat: no-repeat;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+    padding-bottom: 10px;
+}
+
+#card {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 310px;
+    margin: 6rem auto 8.1rem auto;
+    width: 329px;
+}
+#card-content {
+    padding: 12px 44px;
+}
+
+#submit-btn {
+    background: grey;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+}
+
+.form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    background: #fbfbfb;
+    outline: none;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-content:hover {
+    border: 1px solid blue;
+}
+
+  
